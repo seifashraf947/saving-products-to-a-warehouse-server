@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Seif Product Manager</title>
+
+  <!-- Theme Styles -->
+  <link id="theme1" rel="stylesheet" href="style1.css">
+  <link id="theme2" rel="stylesheet" href="style2.css">
+  <link id="theme3" rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <!-- 🎨 Color Picker (collapsible) -->
+  <div id="colorPicker">
+    <button id="togglePicker">✨</button>
+    <div id="pickerOptions">
+      <div class="colorOption" data-color="#111">
+        <span class="colorBall" style="background:#111;"></span> Dark
+      </div>
+      <div class="colorOption" data-color="#cfbebe">
+        <span class="colorBall"style="background:#cfbebe;"></span> Default
+      </div>
+      <div class="colorOption" data-color="#edf4f5">
+        <span class="colorBall" style="background:#edf4f5;"></span> White
+      </div>
+      <div class="colorOption" data-color="#242027">
+        <span class="colorBall" style="background:#242027;"></span> Purple
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- 🖌️ Theme Buttons -->
+  <button id="style1Btn">Style 1</button>
+  <button id="style2Btn">Style 2</button>
+  <button id="style3Btn">Style 3</button>
+
+  <!-- 🧾 Title -->
+  <h1>
+    <span>m</span><span>y</span><span>p</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>t</span>
+  </h1>
+  <!-- 🧩 Form -->
+  <div class="form-container">
+    <p id="messageBox"></p>
+    <input id="productName" placeholder="Product Name" type="text" />
+    <input id="quantity" placeholder="Quantity" type="number" />
+    <input id="description" placeholder="Description" type="text" />
+    <button id="addBtn">Add Product</button>
+
+    <h2>Product List</h2>
+    <ul id="productList"></ul>
+  </div>
+
+  <!-- ✅ JavaScript Files -->
+  <script src="localstorage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
